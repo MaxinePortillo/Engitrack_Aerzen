@@ -191,7 +191,11 @@ const handleZonaEdit = (zona) => {
         setShowModal(true);
     };
 
-   
+    // Eliminar usuario con confirmación
+    const handleDelete = (usuario) => {
+        setUserToDelete(usuario);
+        setShowDeleteModal(true);
+    };
 
     // Confirmar eliminación de usuario
    const confirmDelete = async (id) => {
